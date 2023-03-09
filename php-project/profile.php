@@ -1,4 +1,14 @@
 <?php include 'inc/header.php';?>
+<?php 
+
+    if(!isset($_SESSION['auth'])){
+        header("location:login.php");
+        die;
+    }
+
+?>
+
+
 <?php include 'inc/navbar.php';?>
 
 <body class="bg-secondary"style="--bs-bg-opacity: .2;">

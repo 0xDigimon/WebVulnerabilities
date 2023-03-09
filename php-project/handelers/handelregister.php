@@ -38,6 +38,7 @@ if(checkRequestMethod("POST")){
         if(!requiredval($password)){
             $errors[]="password is required";
         }
+
         elseif(!minval($password,8)){
             $errors[]="password must be greater than 8 digits";
         }
@@ -50,7 +51,7 @@ if(checkRequestMethod("POST")){
 
             //redirect
             $_SESSION['auth']=$data;
-            redirect("../login.php");
+            redirect("../index.php");
             die;
         }
         else {

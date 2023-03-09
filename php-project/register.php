@@ -1,5 +1,14 @@
 <?php include 'inc/header.php';?>
+<?php 
+
+    if(isset($_SESSION['auth'])){
+        header("location:index.php");
+        die;
+    }
+
+?>
 <?php include 'inc/navbar.php';?>
+
 <div class="container">
     <div class="col-8 mx-auto my-5">
         <h2 class="border p-2 my-2 text-center">Register</h2>

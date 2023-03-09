@@ -12,7 +12,7 @@ function requiredval($input)// validation on inputs
 }
 
 function maxval($input,$length){
-    if(strlen($input)>$length){
+    if(strlen($input)>=$length){
         return false;
     }
     return true;
